@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&display=swap');
+
+
+
+*{
+max-width: 1440px;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Mulish", sans-serif;
+}
+/* header section styling */
+#head-container{
+    width: 81%;
+    height: 100px;
+    margin: 0 auto 100px auto;
+    border: 2px solid red; 
+    display: flex;
+}
+#head-container .head-img-container{
+    width: 50%;
+    height: 100px;
+    border: 2px solid rgb(7, 163, 247); 
+    
+}
+#head-container .head-img-container .head-img{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+   
+}
+#head-container .head-img-container .head-img img{
+    width: 48px;
+height: 55px;
+}
+#head-container .head-img-container .head-img h1{
+    color: #131318;
+font-size: 2.2rem;
+font-weight: 800;
+}
+#head-container .head-img-container .head-img .red-text{
+    color: #FF5400;
+}
+#head-container .head-menu{
+    width: 50%;
+    height: 100px;
+    border: 2px solid rgb(199, 16, 244); 
+}
+#head-container .head-menu .navber ul{
+    display: flex;
+    padding: 30px;
+}
+#head-container .head-menu ul{
+    
+}
+#head-container .head-menu ul li{
+list-style: none;
+margin: 0 auto;
+
+}
+#head-container .head-menu  .coloring{
+    color: #FF5400;
+}
+#head-container .head-menu ul li a{
+text-decoration: none;
+font-size:1.2rem ;
+font-weight: 400;
+color: #424247;
+}
+/* banner section styling */
+#banner-container{
+    width: 81%;
+    height: 500px;
+    margin: 0px auto 100px auto;
+    border: 2px solid rgb(232, 11, 240);
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(Images/Group\ 13\ \(1\)\ \(1\).png) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    gap: 50px;
+object-fit: cover;
+}
+#banner-container h1{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+#banner-container p{
+    width: 476px;
+    color: #FFF;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+#banner-container .input-feild{
+      display: inline-flex;
+      padding: 16px;
+      align-items: flex-start;
+      gap: 24px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.30);
+}
+#banner-container .input-feild input{
+    width: 174px;
+height: 52px;
+border-radius: 8px;
+background: #FFF;
+padding: 10px;
+}
+#banner-container .input-feild .find{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 10px;
+}
+
+/* tours section styling */
+#tours-container{
+    width: 81%;
+    /* height: 550px; */
+    margin: 0 auto 100px auto;
+    border: 2px solid rgb(6, 45, 243);
+    display: flex;
+    /* align-items: center; */
+    
+}
+#tours-container .tours-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+}
+#tours-container .tours-content p,li{
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+#tours-container .tours-content li{
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+#tours-container .tours-content h2{
+    color: #131318;
+    font-weight: 800;
+font-size: 3rem;
+}
+#tours-container .tours-content button{
+    width: 174px;
+height: 52px;
+border-radius: 8px;
+background: #FF5400;
+}
+#tours-container.tours-img{
+}
+/* destination section styling */
+#destination-container{
+    width: 81%;
+    height: 850px;
+    margin: 0 auto 100px auto;
+    border: 2px solid rgb(7, 252, 80);
+}
+#destination-container h2{
+    
+}
+#destination-container p{
+
+}
+#destination-container .grid{
+display: grid;
+grid-template-columns:repeat(3,1fr) ;
+grid-template-rows: repeat(3,1fr);
+}
+#destination-container .grid .Maldives{
+
+}
+#destination-container .grid .Indonesia{
+
+}
+#destination-container .grid .Srilanka{
+
+}
+#destination-container .grid .America{
+
+}
+#destination-container .grid .Kashmir{
+
+}
+#destination-container .grid .Bangladesh{
+
+}
+#destination-container .grid .Bandarban{
+
+}
+#destination-container h2{
+
+}
+
+/* choose section styling */
+#card-container{
+    width: 81%;
+    height: 520px;
+    margin: 0 auto 100px auto;
+    border: 2px solid rgb(241, 142, 12);
+}
+#card-container h1{
+    color: #131318;
+     text-align: center;
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+#card-container p{
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+#card-container .two-card-container{
+    display: flex;
+    border: 2px solid rgb(35, 241, 12);
+}
+#card-container .hotel{
+    width: 570px;
+height: 284px;
+border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05)
+}
+#card-container .service{
+    width: 570px;
+height: 284px;
+border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05)
+  
+}
+#card-container .guarantee{
+    width: 570px;
+height: 284px;
+border-radius: 16px;
+background: rgba(233, 68, 68, 0.05);
+    margin: 20px auto;
+    width: 50%;
+    border: 2px solid rgb(222, 241, 12);
+}
+
+/* extra section styling */
+#extra{
+    width: 81%;
+    height: 550px;
+    margin: 0 auto 100px auto;
+    border: 2px solid rgb(249, 8, 169);
+}
+/* discount section styling */
+#discount-container{
+    width: 81%;
+    height: 1550px;
+    margin: 0 auto 100px auto;
+    border: 2px solid rgb(99, 8, 245);
+}
+
+#discount-container .sea-beach{
+    width: 81%;
+    height: 500px;
+    background-image: url(Images/Group\ 39.png);
+}
+
+
+
+/* get-lost section styling */
+#get-lost-container{
+    width: 81%;
+    height: 420px;
+    margin: 0 auto 100px auto;
+    border: 2px solid rgb(154, 245, 6);
+}
+/* newsletter section styling */
+#newsletter-container{
+    width: 81%;
+    height: 420px;
+    margin: 0 auto 100px auto;
+    border: 2px solid rgb(4, 249, 98);
+}
+/* footer section styling */
+#foot-container{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto 100px auto;
+    border: 2px solid rgb(7, 226, 246);
+    background: rgba(19, 19, 24, 0.05);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    #tours-container{
+        flex-direction: column;
+        width: 90%;
+    } 
+    #tours-container.tours-img img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+}
