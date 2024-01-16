@@ -392,7 +392,7 @@ background: rgba(233, 68, 68, 0.05);
 #discount-container{
     width: 81%;
     height: 1700px;
-    margin: 0px 135px 0 135px;
+    margin: 0 auto;
     border: 2px solid rgb(99, 8, 245);
 }
 #discount-container h1{
@@ -684,6 +684,7 @@ margin: 100px auto 20px auto;
     }
     #head-container .head-img-container .head-img{
         width: 500px;
+        margin-left: 100px;
     }
     #head-container .head-menu ul li{
         margin-left: 15px;
@@ -808,7 +809,9 @@ width: 90%;
     #discount-container{
         width: 100%;
         height: 2000px;
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* position: relative; */
     }
     #discount-container p{
 width: 80%;
@@ -816,22 +819,37 @@ width: 80%;
     #discount-container .sea-beach{
         width: 90%;
         height: 500px;
-        position: absolute;
-        margin:300px 10px 30px 10px ;
+        position: relative;
+       border-radius: 15px;
+        margin:auto 10px 100px 30px ;
     }
+    
     #discount-container .sea-beach .sea-beach-text{
-       width: 40%;
-        height: 300px;
+       width: 60%;
+        height: 400px;
         position: absolute;
-        margin:300px 10px 30px 10px ; */
+       margin: 80px ;
+       padding: 0;
     }
+    #discount-container .sea-beach .sea-beach-text i,h2{
+      margin: 10px;
+
+    }
+    
     #discount-container .sea-beach-different{
-        width: 100%;
-        height: 300px;
+        width: 90%;
+        height: 500px;
+        border-radius: 15px;
     }
     #discount-container .sea-beach-different .sea-beach-text{
-        width: 100%;
-        height: 300px;
+        width: 60%;
+        height: 400px;
+        position: absolute;
+       margin: 80px ;
+       padding: 0;
+    }
+    #discount-container .sea-beach-different .sea-beach-text i,h2{
+         margin: 10px;
     }
    /* get lost section responsive */
     #get-lost-container{
@@ -840,8 +858,8 @@ width: 80%;
         margin-left: 20px;
         flex-direction: column;
     }
-    #get-lost-container .get-lost-text{
-
+    #get-lost-container .get-lost-text p{
+width: 90%;
     }
     #get-lost-container .get-lost-img img{
         width: 90%;
@@ -852,7 +870,7 @@ width: 80%;
     #newsletter-container{
         width: 100%;
         flex-direction: column;
-        height: 800px;
+        height: 700px;
     }
     #newsletter-container .newsletter-text{
 width: 100%;
