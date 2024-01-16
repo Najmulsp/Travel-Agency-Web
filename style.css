@@ -81,7 +81,7 @@ color: #424247;
     align-items: center;
     padding: 70px;
     gap: 50px;
-object-fit: cover;
+/* object-fit: cover; */
 }
 #banner-container h1{
     color: #FFF;
@@ -112,6 +112,7 @@ background: #FFF;
 padding: 10px;
 }
 #banner-container .input-feild .find{
+    color: #FFF;
     width: 174px;
     height: 52px;
     border-radius: 8px;
@@ -156,6 +157,7 @@ padding: 10px;
 font-size: 3rem;
 }
 #tours-container .tours-content button{
+    color: #FFF;
     width: 174px;
 height: 52px;
 border-radius: 8px;
@@ -307,7 +309,6 @@ height: 284px;
 border-radius: 16px;
 background: rgba(233, 68, 68, 0.05);
     margin: 20px auto;
-    width: 50%;
     border: 2px solid rgb(222, 241, 12);
     box-sizing: border-box;
 }
@@ -654,10 +655,33 @@ margin: 100px auto 20px auto;
 
 
 @media (max-width:600px) {
+    #head-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* #head-container .head-img-container .head-img{
+        justify-content: center;
+    } */
+    #banner-container{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        padding: 5px;
+        margin: 15px;
+    }
+    #banner-container .input-feild{
+        flex-direction: column;
+        width: 70%;
+      align-items: center;
+    }
     #tours-container{
         flex-direction: column;
         width: 90%;
     } 
+    #tours-container .tours-content{
+        margin: 0 auto;
+    }
     #tours-container.tours-img img{
         width: 80%;
         margin: 0 auto;
@@ -672,6 +696,9 @@ margin: 100px auto 20px auto;
 
     #destination-container .grid{
         grid-template-columns: 1fr;
+    }
+    #destination-container p{
+        width: 80%;
     }
     #destination-container .grid .Maldives{
         grid-column:1 / span 24 ;
@@ -695,11 +722,75 @@ margin: 100px auto 20px auto;
     #destination-container .grid .Bandarban{
         grid-column:1 / span 24 ;
     }
-    
+
+    #card-container{
+        height: 1000px;
+    }
+    #card-container p{
+        width: 80%;
+        
+    }
     #card-container .two-card-container{
         flex-direction: column;
     }
-    #card-container .hotel{
+    #card-container .two-card-container .hotel{
         width: 100%;
     }
+    #card-container .two-card-container .service{
+        width: 100%;
+    }
+    #card-container .guarantee{
+        width: 100%;
+    }
+    #hotel{
+        width: 100%;
+        height:1800px ;
+    }
+    #hotel .hotel-container{
+        flex-direction: column;
+    }
+    #hotel h1,{
+        width: 80%;
+        text-align: left;
+    }
+    #hotel p{
+        width: 80%;
+        text-align: left; 
+    }
+
+    #hotel .hotel-container .hotel-text h2{
+        
+    }
+    #hotel .hotel-container .hotel-text p{
+width: 90%;
+    }
+    /* discount section responsive */
+    #discount-container{
+        width: 100%;
+        height: 3500px;
+        position: relative;
+    }
+    #discount-container p{
+width: 80%;
+    }
+    #discount-container .sea-beach{
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        margin:300px 10px 30px 10px ;
+    }
+    #discount-container .sea-beach .sea-beach-text{
+        width: 70%;
+        /* height: 80%; */
+        position: absolute;
+        margin:300px 10px 30px 10px ;
+    }
+    #newsletter-container{
+        flex-direction: column;
+    }
+    /* #foot-container{
+        width: 100%;
+    } */
+
+
 }
