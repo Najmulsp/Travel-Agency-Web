@@ -166,44 +166,62 @@ background: #FF5400;
 /* destination section styling */
 #destination-container{
     width: 81%;
-    height: 850px;
+    /* height: 1300px; */
     margin: 0 auto 100px auto;
     border: 2px solid rgb(7, 252, 80);
 }
 #destination-container h2{
-    
+    color: #131318;
+text-align: center;
+font-size: 2.5rem;
+font-weight: 800;
 }
 #destination-container p{
-
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px auto 20px auto;
 }
 #destination-container .grid{
+    box-sizing: border-box;
+    width: 100%;
+    
 display: grid;
-grid-template-columns:repeat(3,1fr) ;
+grid-template-columns:repeat(12,1fr) ;
 grid-template-rows: repeat(3,1fr);
+gap: 10px;
+margin-bottom: 100px;
+}
+#destination-container .grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
 #destination-container .grid .Maldives{
-
+    width: 100%;
+grid-column: 1/span 6;
 }
 #destination-container .grid .Indonesia{
-
+    
+grid-column: 7/span 12;
 }
 #destination-container .grid .Srilanka{
-
+grid-column: 1 / span 4;
 }
 #destination-container .grid .America{
-
+grid-column: 5 / span 6;
 }
 #destination-container .grid .Kashmir{
-
+grid-column:  11/ span 8;
 }
 #destination-container .grid .Bangladesh{
-
+grid-column: 1 / span 5;
 }
 #destination-container .grid .Bandarban{
-
-}
-#destination-container h2{
-
+grid-column: 6 / span 13;
 }
 
 /* choose section styling */
@@ -310,11 +328,62 @@ background: rgba(233, 68, 68, 0.05);
 }
 
 /* extra section styling */
-#extra{
+#hotel{
     width: 81%;
-    height: 550px;
+    height: 1000px;
     margin: 0 auto 100px auto;
     border: 2px solid rgb(249, 8, 169);
+    background-color: #F2F2F2;
+}
+#hotel h1{
+    color: #131318;
+    text-align: center;
+   font-size: 2.6rem;
+   font-weight: 800;
+   margin-bottom: 20px;
+}
+#hotel p{
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+#hotel .hotel-container{
+    display: flex;
+    box-sizing: border-box;
+}
+#hotel .hotel-container .hotel-text h2{
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 10px;
+    margin: 20px;
+}
+#hotel .hotel-container .hotel-text p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
+}
+#hotel .hotel-container .hotel-text button{
+    width: 150px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    margin: 20px;
+    }
+    #hotel .hotel-container .hotel-img{
+        width: 90%;
+        padding: 20px;
+        
+    }
+#hotel .hotel-container .hotel-img img{
+    width: 100%;
+    border-radius: 15px;
 }
 /* discount section styling */
 #discount-container{
@@ -595,13 +664,42 @@ margin: 100px auto 20px auto;
     }
     #get-lost-container{
         flex-direction: column;
+      
     }
     #get-lost-container .get-lost-img{
         width: 50%;
     }
 
-
-
-
-
+    #destination-container .grid{
+        grid-template-columns: 1fr;
+    }
+    #destination-container .grid .Maldives{
+        grid-column:1 / span 24 ;
+    }
+    #destination-container .grid .Indonesia{
+        
+        grid-column:1 / span 24 ;
+    }
+    #destination-container .grid .Srilanka{
+        grid-column:1 / span 24 ;
+    }
+    #destination-container .grid .America{
+        grid-column:1 / span 24 ;
+    }
+    #destination-container .grid .Kashmir{
+        grid-column:1 / span 24 ;
+    }
+    #destination-container .grid .Bangladesh{
+        grid-column:1 / span 24 ;
+    }
+    #destination-container .grid .Bandarban{
+        grid-column:1 / span 24 ;
+    }
+    
+    #card-container .two-card-container{
+        flex-direction: column;
+    }
+    #card-container .hotel{
+        width: 100%;
+    }
 }
