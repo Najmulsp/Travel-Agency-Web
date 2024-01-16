@@ -48,6 +48,7 @@ font-weight: 800;
 #head-container .head-menu .navber ul{
     display: flex;
     padding: 30px;
+    margin-left: 0;
 }
 #head-container .head-menu ul{
     
@@ -569,6 +570,19 @@ margin: 15px;
 #get-lost-container .get-lost-text{
 padding: 10px;
 }
+#get-lost-container .get-lost-img{
+    position: relative;
+}
+#get-lost-container .get-lost-img>p{
+    position: absolute;
+    width: 276px;
+color: #FFF;
+top: 40%;
+left: 25%;
+text-align: center;
+font-size: 1.5rem;
+font-weight: 700;
+}
 #get-lost-container .get-lost-text h1{
     width: 448px;
 color: #131318;
@@ -605,6 +619,8 @@ margin-left: 15px;
     width: 50%;
     padding: 20px;
     background: #FFF;
+    border: 2px solid #FF5400;
+    border-radius: 15px;
 }
 #newsletter-container .newsletter-text h1{
     color: #131318;
@@ -625,6 +641,7 @@ margin: 15px;
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
     margin: 15px;
+    padding-left: 10px;
 }
 #newsletter-container .newsletter-text>button{
     color: #FFF;
@@ -707,24 +724,31 @@ gap: 40px;
 
 
 
-@media (max-width:600px) {
+@media screen and (max-width:600px) {
+*{
+    margin: 0 auto;
+}
     #head-container{
         flex-direction: column;
         gap: 20px;
+    
     }
     #head-container .head-img-container .head-img{
         width: 500px;
-        margin-left: 100px;
+        margin-left: -90px;
+    }
+    #head-container .head-menu .navber ul{
+        width: 100%;
+        padding-left: 0;
+        margin: 0 -90px;
     }
     #head-container .head-menu ul li{
-        margin-left: 15px;
-        
+        margin-left: 15px;  
     }
     #banner-container{
         box-sizing: border-box;
-        width: 100%;
+        width: 90%;
         height: 100%;
-        /* object-fit: cover; */
         padding: 5px;
         margin: 15px;
     }
@@ -770,44 +794,53 @@ gap: 40px;
     }
     #destination-container .grid .Maldives{
         grid-column:1 / span 24 ;
+        height: 300px;
     }
     #destination-container .grid .Maldives>p{
         margin-left: 80px;
+        
     }
     #destination-container .grid .Indonesia{
-        
+        height: 300px;
         grid-column:1 / span 24 ;
     }
     #destination-container .grid .Indonesia>p{
         margin-left: 55px;
+       
     }
     #destination-container .grid .Srilanka{
         grid-column:1 / span 24 ;
+        height: 300px;
     }
     #destination-container .grid .Srilanka>p{
         margin-left: 155px;
     }
     #destination-container .grid .America{
         grid-column:1 / span 24 ;
+        height: 300px;
     }
     #destination-container .grid .America>p{
         margin-left: 50px;
     }
     #destination-container .grid .Kashmir{
         grid-column:1 / span 24 ;
+        width:100%;
+        height: 300px;
     }
     #destination-container .grid .Kashmir>p{
-        margin-top: 130px;
-        margin-left: -15px;
+        margin-top: -20px;
+        margin-left: 350px;
     }
     #destination-container .grid .Bangladesh{
         grid-column:1 / span 24 ;
+        height: 300px;
     }
     #destination-container .grid .Bangladesh>p{
         margin-left: 90px;
     }
     #destination-container .grid .Bandarban{
         grid-column:1 / span 24 ;
+        height: 300px;
     }
     #destination-container .grid .Bandarban>p{
         margin-left: 70px;
@@ -826,6 +859,10 @@ gap: 40px;
         height: 300px;
 
     }
+    #card-container .two-card-container .hotel p{
+    padding: 0;
+        margin-left: 10px;
+    }
     #card-container .two-card-container .service{
         width: 100%;
         height: 310px;
@@ -838,7 +875,7 @@ gap: 40px;
     
     #hotel{
         width: 100%;
-        /* height:1800px ; */
+        height:1800px ;
         margin-top:50px ;
     }
     #hotel .hotel-container{
@@ -931,7 +968,9 @@ width: 90%;
         height: 700px;
     }
     #newsletter-container .newsletter-text{
-width: 100%;
+width: 90%;
+margin: 0 auto 20px auto;
+
     }
     #newsletter-container .newsletter-img img{
 width: 90%;
