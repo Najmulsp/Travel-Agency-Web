@@ -247,8 +247,8 @@ position: relative;
     color: #FFF;
     font-size: 1.5rem;
     position: absolute;
-    left:  50px;
-    top: 50px;
+    left:  -85%;
+    top: 45%;
 }
 #destination-container .grid .Bangladesh{
 grid-column: 1 / span 5;
@@ -276,13 +276,13 @@ position: relative;
 #card-container{
     width: 81%;
     margin: 0 auto 100px auto;
+    
 }
 #card-container h1{
     color: #131318;
      text-align: center;
     font-size: 2.6rem;
     font-weight: 800;
-    margin-bottom: 20px;
 }
 #card-container p{
     width: 643px;
@@ -299,15 +299,16 @@ position: relative;
 }
 #card-container .hotel{
     text-align: left;
-    width: 48%;
+    width: 50%;
 height: 284px;
 border-radius: 16px;
 background:  rgba(233, 68, 68, 0.05);
 border: 3px solid  rgba(233, 68, 68, 0.05);
 box-sizing: border-box;
+padding-bottom: 15px;
 }
 #card-container .hotel img{
-padding: 10px;
+   margin-left: 10px;
 }
 #card-container .hotel h3{
     color: #131318;
@@ -377,7 +378,7 @@ padding: 5px;
 /* extra section styling */
 #hotel{
     width: 81%;
-    height: 1000px;
+    height: 1045px;
     margin: 0 auto 100px auto;
     background-color: #F2F2F2;
 border-radius: 15px;
@@ -388,6 +389,7 @@ border-radius: 15px;
    font-size: 2.6rem;
    font-weight: 800;
    margin-bottom: 20px;
+   padding-top: 10px;
 }
 #hotel p{
     width: 643px;
@@ -812,13 +814,8 @@ gap: 40px;
         margin-top: -20px;
     }
 /* card section responsive */
-    #card-container{
-    
-       
-    }
     #card-container p{
-        width: 80%;
-        
+        width: 80%;   
     }
     #card-container .two-card-container{
         flex-direction: column;
