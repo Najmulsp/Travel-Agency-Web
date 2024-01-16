@@ -104,12 +104,12 @@ color: #424247;
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.30);
 }
-#banner-container .input-feild input{
+#banner-container .input-feild select{
     width: 174px;
 height: 52px;
 border-radius: 8px;
 background: #FFF;
-padding: 10px;
+padding: 10px 10px;
 }
 #banner-container .input-feild .find{
     color: #FFF;
@@ -164,6 +164,7 @@ border-radius: 8px;
 background: #FF5400;
 }
 #tours-container.tours-img{
+
 }
 /* destination section styling */
 #destination-container{
@@ -371,6 +372,7 @@ background: rgba(233, 68, 68, 0.05);
     margin: 20px;
 }
 #hotel .hotel-container .hotel-text button{
+    color: #FFF;
     width: 150px;
     height: 52px;
     border-radius: 8px;
@@ -448,6 +450,7 @@ font-weight: 800;
     margin: 15px;
 }
 #discount-container .sea-beach .sea-beach-text .book-btn{
+    color: #FFF;
     width: 150px;
 height: 52px;
 border-radius: 8px;
@@ -460,6 +463,20 @@ margin: 15px;
     background-image: url(Images/Group\ 40.png);
     position: relative;
     margin: 30px auto;
+}
+#discount-container .sea-beach-different .sea-beach-text i{
+    color: #FF5400;
+    margin: 10px;
+    font-size: 1rem;
+    margin: 40px auto 20px auto;
+}
+#discount-container .sea-beach-different .sea-beach-text .book-btn{
+    color: #FFF;
+    width: 150px;
+height: 52px;
+border-radius: 8px;
+background: #FF5400;
+margin: 15px;
 }
 /* discount different section styling */
 #discount-container .sea-beach-different .sea-beach-text {
@@ -622,10 +639,14 @@ gap: 20px;
 margin: 100px auto 20px auto;
 }
 #foot-container .first-part h1{
-
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
 }
 #foot-container .first-part h1 span{
-
+    color: #FF5400;
+    font-size: 2rem;
+    font-weight: 800;
 }
 #foot-container > p{
     /* width: 769px; */
@@ -661,9 +682,12 @@ margin: 100px auto 20px auto;
         flex-direction: column;
         gap: 20px;
     }
-    /* #head-container .head-img-container .head-img{
-        justify-content: center;
-    } */
+    #head-container .head-img-container .head-img{
+        width: 500px;
+    }
+    #head-container .head-menu ul li{
+        margin-left: 15px;
+    }
     #banner-container{
         box-sizing: border-box;
         width: 100%;
@@ -675,29 +699,35 @@ margin: 100px auto 20px auto;
     #banner-container h1{
         width: 80%;
         font-size: 2rem;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
     }
     #banner-container p{
-        margin-top: 0;
+        margin: 0;
         width: 70%;
         font-size: 1rem;
+        padding: 0;
     }
     #banner-container .input-feild{
         flex-direction: column;
         width: 70%;
       align-items: center;
+      margin-bottom: 0;
+      padding: 0%;
+      gap: 10px;
     }
     #tours-container{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
     } 
     #tours-container .tours-content{
         margin: 0 auto;
     }
-    #tours-container.tours-img img{
+    
+    #tours-container .tours-img img{
+        margin-left: 20px;
+        width: 90%;
         
-        width: 50%;
-        margin: 0 auto;
     }
     
     #destination-container .grid{
@@ -753,7 +783,8 @@ margin: 100px auto 20px auto;
         height:1800px ;
     }
     #hotel .hotel-container{
-        flex-direction: column;
+        flex-direction:column-reverse;
+        margin-left: 20px;
     }
     #hotel h1,{
         width: 80%;
@@ -762,6 +793,9 @@ margin: 100px auto 20px auto;
     #hotel p{
         width: 80%;
         text-align: left; 
+    }
+    #hotel .middle{
+        flex-direction:column;
     }
 
     #hotel .hotel-container .hotel-text h2{
@@ -773,23 +807,31 @@ width: 90%;
     /* discount section responsive */
     #discount-container{
         width: 100%;
-        height: 5000px;
+        height: 2000px;
         position: relative;
     }
     #discount-container p{
 width: 80%;
     }
     #discount-container .sea-beach{
-        width: 100%;
-        height: 80%;
+        width: 90%;
+        height: 500px;
         position: absolute;
         margin:300px 10px 30px 10px ;
     }
     #discount-container .sea-beach .sea-beach-text{
-        width: 70%;
-        /* height: 80%; */
+       width: 40%;
+        height: 300px;
         position: absolute;
-        margin:300px 10px 30px 10px ;
+        margin:300px 10px 30px 10px ; */
+    }
+    #discount-container .sea-beach-different{
+        width: 100%;
+        height: 300px;
+    }
+    #discount-container .sea-beach-different .sea-beach-text{
+        width: 100%;
+        height: 300px;
     }
    /* get lost section responsive */
     #get-lost-container{
