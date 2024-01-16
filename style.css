@@ -266,16 +266,120 @@ background: rgba(233, 68, 68, 0.05);
 /* discount section styling */
 #discount-container{
     width: 81%;
-    height: 1550px;
-    margin: 0 auto 100px auto;
+    height: 1700px;
+    margin: 0px 135px 0 135px;
     border: 2px solid rgb(99, 8, 245);
+}
+#discount-container h1{
+    color: #131318;
+text-align: center;
+font-size: 2.5rem;
+font-weight: 800;
+}
+#discount-container>p{
+    width: 500px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 20px auto 25px auto;
 }
 
 #discount-container .sea-beach{
-    width: 81%;
+    /* box-sizing: border-box; */
+    width: 100%;
     height: 500px;
     background-image: url(Images/Group\ 39.png);
+    position: relative;
+    margin: 30px auto;
 }
+#discount-container .sea-beach .sea-beach-text {
+    background: rgba(255, 255, 255, 0.80);
+    width: 500px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #ec1919;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    margin: 55px -55px 50px 600px;
+    
+    /* backdrop-filter: blur(2.5px); */
+}
+#discount-container .sea-beach .sea-beach-text i{
+    color: #FF5400;
+    margin: 10px;
+    font-size: 1rem;
+    margin: 40px auto 20px auto;
+}
+#discount-container .sea-beach .sea-beach-text i span {
+    color: #131318 ;
+}
+#discount-container .sea-beach .sea-beach-text p{
+    margin: 15px;
+}
+#discount-container .sea-beach .sea-beach-text h3{
+    font-size: 1.2rem;
+    color: #FF5400;
+    font-weight: 800;
+    margin: 15px;
+}
+#discount-container .sea-beach .sea-beach-text .book-btn{
+    width: 150px;
+height: 52px;
+border-radius: 8px;
+background: #FF5400;
+margin: 15px;
+}
+#discount-container .sea-beach-different{
+    width: 100%;
+    height: 500px;
+    background-image: url(Images/Group\ 40.png);
+    position: relative;
+    margin: 30px auto;
+}
+/* discount different section styling */
+#discount-container .sea-beach-different .sea-beach-text {
+    background: rgba(255, 255, 255, 0.80);
+    width: 500px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #ec1919;
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    margin: 55px 600px 50px 55px;
+    
+    /* backdrop-filter: blur(2.5px); */
+}
+#discount-container .sea-beach-differenth .sea-beach-text i{
+    color: #FF5400;
+    margin: 10px;
+    font-size: 1rem;
+    margin: 40px auto 20px auto;
+}
+#discount-container .sea-beach-different .sea-beach-text i span {
+    color: #131318 ;
+}
+#discount-container .sea-beach-different .sea-beach-text p{
+    margin: 15px;
+}
+#discount-container .sea-beach-different .sea-beach-text h3{
+    font-size: 1.2rem;
+    color: #FF5400;
+    font-weight: 800;
+    margin: 15px;
+}
+#discount-container .sea-beach-different .sea-beach-text .book-btn{
+    width: 150px;
+height: 52px;
+border-radius: 8px;
+background: #FF5400;
+margin: 15px;
+}
+
+/* url(<path-to-image>), lightgray 50% / cover no-repeat; */
+
 
 
 
@@ -283,7 +387,7 @@ background: rgba(233, 68, 68, 0.05);
 #get-lost-container{
     width: 81%;
     height: 420px;
-    margin: 0 auto 100px auto;
+    margin: 100px auto 100px auto;
     border: 2px solid rgb(154, 245, 6);
 }
 /* newsletter section styling */
